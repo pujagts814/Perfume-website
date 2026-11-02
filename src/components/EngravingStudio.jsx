@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Sparkles, Edit3, ShoppingBag, Check, Award } from 'lucide-react'
+import { Sparkles, ShoppingBag, Check, Award } from 'lucide-react'
 
 export default function EngravingStudio({
   fragrances,

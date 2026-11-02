@@ -7,10 +7,8 @@ import {
   Wind,
   Sun,
   Flame,
-  Layers,
   Camera,
   Rotate3d,
-  ChevronRight,
   Edit3
 } from 'lucide-react'
 import ThreeBottleViewer from './ThreeBottleViewer'
@@ -23,7 +21,7 @@ export default function FragranceShowcase({
   wishlist,
   onToggleWishlist,
   onNavigateToEngraving,
-  currency,
+  _currency,
   currencySymbol,
   currencyRate
 }) {

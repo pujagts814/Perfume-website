@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { X, Sparkles, ShoppingBag, Heart, Clock, Wind, Sun, Star } from 'lucide-react'
+import { X, ShoppingBag, Heart, Clock, Wind, Sun } from 'lucide-react'
 
 export default function QuickViewModal({
   fragrance,

@@ -50,7 +50,7 @@ export default function CartDrawer({
         origin: { y: 0.6 },
         colors: ['#D4AF37', '#F3E5AB', '#8E1616', '#FFFFFF']
       })
-    } catch (e) {
+    } catch {
       // ignore
     }
   }

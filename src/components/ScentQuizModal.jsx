@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
-import { Sparkles, X, Check, ArrowRight, RefreshCw, ShoppingBag } from 'lucide-react'
+import { Sparkles, X, ArrowRight, RefreshCw, ShoppingBag } from 'lucide-react'
 import { QUIZ_QUESTIONS } from '../data/fragrances'
+
+function calculateMatchPercentage(seed) {
+  return 94 + (Math.abs(seed) % 5)
+}
 
 export default function ScentQuizModal({
   isOpen,
@@ -40,7 +44,7 @@ export default function ScentQuizModal({
       })
       const found = fragrances.find(f => f.id === topId) || fragrances[0]
       setMatchedFragrance(found)
-      setMatchPercentage(Math.floor(Math.random() * 5) + 94) // 94-98%
+      setMatchPercentage(calculateMatchPercentage(maxCount + 3)) // 94-98%
       setCurrentStep(QUIZ_QUESTIONS.length)
     }
   }

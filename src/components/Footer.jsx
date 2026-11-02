@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import { Sparkles, Send, Shield, Award, Heart, Check } from 'lucide-react'
+import { Sparkles, Send, Check } from 'lucide-react'
+
+const CURRENT_YEAR = new Date().getFullYear()
 
 export default function Footer() {
   const [email, setEmail] = useState('')
@@ -122,7 +124,7 @@ export default function Footer() {
           <span>✦ Paris Haute Parfumerie Guild</span>
         </div>
         <p className="copyright-line">
-          © {new Date().getFullYear()} LUMIÈRE HAUTE PARFUMERIE PARIS. All Rights Reserved.
+          © {CURRENT_YEAR} LUMIÈRE HAUTE PARFUMERIE PARIS. All Rights Reserved.
         </p>
       </div>
     </footer>

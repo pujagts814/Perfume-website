@@ -35,7 +35,7 @@ const FRAGRANCE_THEMES = {
   }
 }
 
-function FlaconModel({ fragranceId, engravingText }) {
+function FlaconModel({ fragranceId, _engravingText }) {
   const bottleRef = useRef()
   const theme = FRAGRANCE_THEMES[fragranceId] || FRAGRANCE_THEMES['rouge-noir']
 
